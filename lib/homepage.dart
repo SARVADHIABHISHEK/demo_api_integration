@@ -52,9 +52,7 @@ class _HomePageState extends State<HomePage> {
       body: GridView.builder(
           itemCount: _apiData.length,
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: MediaQuery.of(context).orientation == Orientation.landscape
-                    ? 3
-                    : 2,
+            crossAxisCount: MediaQuery.of(context).orientation == Orientation.landscape ? 3 : 2,
             crossAxisSpacing: 1,
             mainAxisSpacing: 1,
             childAspectRatio: (2 / 1.2),
@@ -69,9 +67,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: BoxDecoration(
                     image: DecorationImage(image: NetworkImage(item.image)),
                   ),
-                    child: Text(item.title),
                 ),
-
               ),
             );
           }),
