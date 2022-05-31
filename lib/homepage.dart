@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
                   decoration: BoxDecoration(
                     image: DecorationImage(image: NetworkImage(item.image)),
                   ),
-
+                  child: Text(item.title),
                 ),
 
               ),
