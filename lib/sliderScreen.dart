@@ -28,7 +28,6 @@ class _SliderScreenState extends State<SliderScreen> {
           itemBuilder: (context, index) {
             final item = widget.todo[index];
             final List<String> images = item.sliderImages.map((e) => e.image).toList();
-
             return Padding(
               padding: const EdgeInsets.all(10.0),
               child: Container(
